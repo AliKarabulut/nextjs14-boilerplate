@@ -1,5 +1,5 @@
 {
-  "extends": ["next/core-web-vitals", "plugin:@next/next/recommended", "prettier"],
+  "extends": ["next/core-web-vitals", "plugin:@next/next/recommended", "prettier", "plugin:prettier/recommended"],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaFeatures": {
@@ -8,7 +8,7 @@
     "ecmaVersion": 2021,
     "sourceType": "module"
   },
-  "plugins": ["import", "@typescript-eslint"],
+  "plugins": ["import", "@typescript-eslint", "prettier"],
   "rules": {
     "@typescript-eslint/no-unused-vars": "warn",
     "@typescript-eslint/no-explicit-any": "error",
