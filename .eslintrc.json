@@ -8,7 +8,7 @@
     "ecmaVersion": 2021,
     "sourceType": "module"
   },
-  "plugins": ["@typescript-eslint", "simple-import-sort", "plugin:@next/next/recommended", "prettier"],
+  "plugins": ["import", "@typescript-eslint", "plugin:@next/next/recommended", "prettier"],
   "rules": {
     "@typescript-eslint/no-unused-vars": "warn",
     "@typescript-eslint/no-explicit-any": "error",
@@ -24,8 +24,7 @@
           }
         ]
       }
-    ],
-    "import/prefer-default-export": "off"
+    ]
   },
   "settings": {
     "import/resolver": {
