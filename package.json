@@ -1,7 +1,13 @@
 {
-  "name": "next-auth-v5",
+  "name": "nextjs14-boilerplate",
   "version": "0.1.0",
   "private": true,
+  "description": "A Next.js 14 boilerplate with TypeScript, ESLint, Prettier, Husky, Tailwind CSS",
+  "author": {
+    "name": "Your Name",
+    "email": "example@example.com",
+    "url": "https://example.com"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
