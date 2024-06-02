@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 
+import { sharedDescription, sharedTitle } from '@/app/shared-metadata'
 import './globals.css'
-import { sharedTitle, sharedDescription } from './shared-metadata'
 
 const inter = Inter({ subsets: ['latin'] })
 

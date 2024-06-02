@@ -7,5 +7,6 @@ module.exports = {
   trailingComma: 'all',
   printWidth: 140,
   endOfLine: 'auto',
-  plugins: ['prettier-plugin-tailwindcss'],
+  plugins: ['prettier-plugin-tailwindcss', "prettier-plugin-organize-imports"],
+  organizeImportsSkipDestructiveCodeActions: true
 }
