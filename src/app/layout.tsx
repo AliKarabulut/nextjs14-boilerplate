@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 
 import { sharedDescription, sharedTitle } from '@/app/shared-metadata'
+import cn from '@/utils/cn'
 import './globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -9,7 +10,7 @@ const inter = Inter({ subsets: ['latin'] })
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>{children}</body>
+      <body className={cn('antialiased', inter.className)}>{children}</body>
     </html>
   )
 }
