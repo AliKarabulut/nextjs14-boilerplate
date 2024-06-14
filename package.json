@@ -22,13 +22,9 @@
     }
   },
   "lint-staged": {
-    "*.ts": [
+    "*.{ts,tsx}": [
       "eslint --fix",
-      "prettier --write"
-    ],
-    "*.tsx": [
-      "eslint --fix",
-      "prettier --write"
+      "prettier --write --config ./.prettierrc-staged.js"
     ]
   },
   "dependencies": {
