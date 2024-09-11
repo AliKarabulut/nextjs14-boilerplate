@@ -1,13 +1,5 @@
 {
-  "extends": [
-    "next/core-web-vitals",
-    "plugin:@next/next/recommended",
-    "plugin:prettier/recommended",
-    "plugin:tailwindcss/recommended",
-    "plugin:jsx-a11y/recommended",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:import/recommended"
-  ],
+  "extends": ["next/core-web-vitals", "plugin:@next/next/recommended", "prettier", "plugin:prettier/recommended",  "plugin:tailwindcss/recommended"],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaFeatures": {
@@ -16,14 +8,24 @@
     "ecmaVersion": 2021,
     "sourceType": "module"
   },
-  "plugins": ["import", "@typescript-eslint", "prettier", "jsx-a11y"],
+  "plugins": ["import", "@typescript-eslint", "prettier", "unused-imports"],
   "rules": {
     "@typescript-eslint/no-unused-vars": "warn",
     "@typescript-eslint/no-explicit-any": "error",
     "tailwindcss/classnames-order": "warn",
-    "tailwindcss/no-custom-classname": "warn",
+    "tailwindcss/no-custom-classname": "off",
     "tailwindcss/no-contradicting-classname": "error",
     "tailwindcss/enforces-shorthand": "error",
+    "unused-imports/no-unused-imports": "error",
+    "unused-imports/no-unused-vars": [
+      "warn",
+      {
+        "vars": "all",
+        "varsIgnorePattern": "^_",
+        "args": "after-used",
+        "argsIgnorePattern": "^_"
+      }
+    ],
     "import/order": [
       "warn",
       {
