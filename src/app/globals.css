@@ -41,6 +41,25 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+  --text-dynamic-xs: clamp(0.75rem, 0vw + 0.75rem, 0.75rem);
+  --text-dynamic-sm: clamp(0.875rem, 0vw + 0.875rem, 0.875rem);
+  --text-dynamic-base: clamp(0.875rem, 0.216vw + 0.789rem, 1rem);
+  --text-dynamic-lg: clamp(1rem, 0.216vw + 0.914rem, 1.125rem);
+  --text-dynamic-xl: clamp(1rem, 0.386vw + 0.879rem, 1.25rem);
+  --text-dynamic-1\.5xl: clamp(1.125rem, 0.386vw + 1.004rem, 1.375rem);
+  --text-dynamic-2xl: clamp(1.25rem, 0.431vw + 1.078rem, 1.5rem);
+  --text-dynamic-2\.5xl: clamp(1.5rem, 0.431vw + 1.328rem, 1.75rem);
+  --text-dynamic-3xl: clamp(1.625rem, 0.513vw + 1.465rem, 1.875rem);
+  --text-dynamic-3\.5xl: clamp(1.5rem, 0.647vw + 1.741rem, 2rem);
+  --text-dynamic-4xl: clamp(1.5rem, 1.293vw + 0.983rem, 2.25rem);
+  --text-dynamic-4\.5xl: clamp(2rem, 0.826vw + 1.69rem, 2.5rem);
+  --text-dynamic-5xl: clamp(2.25rem, 1.293vw + 1.733rem, 3rem);
+  --text-dynamic-5\.5xl: clamp(2.5rem, 1.378vw + 2.177rem, 3.5rem);
+  --text-dynamic-6xl: clamp(3rem, 1.293vw + 2.483rem, 3.75rem);
+  --text-dynamic-6\.5xl: clamp(3rem, 1.378vw + 2.677rem, 4rem);
+  --text-dynamic-7xl: clamp(3rem, 2.012vw + 2.528rem, 4.5rem);
+  --text-dynamic-8xl: clamp(3.75rem, 3.018vw + 3.043rem, 6rem);
+  --text-dynamic-9xl: clamp(4.5rem, 4.694vw + 3.4rem, 8rem);
 }
 
 :root {
@@ -117,6 +136,9 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground hyphens-auto;
+  }
+  body.debug * {
+    @apply outline-1 outline-red-300;
   }
 }

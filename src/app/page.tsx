@@ -1,3 +1,3 @@
 export default function Home() {
-  return <div className="">Home</div>;
+  return <div className="text-dynamic-3xl">Home</div>;
 }
